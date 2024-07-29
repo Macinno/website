@@ -581,12 +581,16 @@ nav {
 /* Text End  */
 
 .cube {
-
   width: 40%; 
   height: 100%;
 }
 
-.container {
+.cube img{
+  width: 100%;
+  height: auto;
+}
+
+/* .container {
   position: relative;
 }
 
@@ -2136,7 +2140,7 @@ nav {
     transform: translateZ(-180px) rotateZ(90deg) rotateY(-90deg) rotateZ(90deg) rotateY(-90deg) rotateZ(90deg) rotateY(-90deg) rotateX(90deg); }
   100% {
     transform: translateZ(-180px) rotateZ(90deg) rotateY(-90deg) rotateZ(90deg) rotateY(-90deg) rotateZ(90deg) rotateY(-90deg) rotateX(90deg); } 
-}
+} */
 
 /* Cube End  */
 
