@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Asul:wght@400;700&display=swap');
 
 
@@ -116,7 +115,6 @@ nav ul li:nth-child(4) {
    /* Nav End  */
 
  /* First Section Start  */
-
 .one {
   display: flex;
   height: 53vw;
@@ -2203,6 +2201,7 @@ nav ul li:nth-child(4) {
   width: 100%;
   background-color: #000;
   display: flex;
+  margin-bottom: -5px;
 }
 .f-img img{
   height: 35vw;
@@ -2259,7 +2258,6 @@ nav ul li:nth-child(4) {
   gap: 8vw;
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
-  font-size: 1.5vw;
 }
 
 .info-text {
@@ -2267,13 +2265,16 @@ nav ul li:nth-child(4) {
   flex-direction: column;
   gap:2vw;
   margin-top: 2vw;
+  font-size: 16px;
 }
 .office-info p {
-  font-size: 1.2vw;
   font-weight: 100;
   line-height: 1.5vw;
 }
-
+.office-info h5, .social-add h5 {
+  font-style: bold;
+  letter-spacing: 1px;
+}
 
 .f-add a{
   color: #fff;
@@ -2286,7 +2287,7 @@ nav ul li:nth-child(4) {
   flex-direction: column;
   gap: 2.5vw;
   margin-top: 4vw;
-  font-size: 1.5vw;
+  font-size: 16px;
 }
 
 .copyright {
@@ -2298,7 +2299,13 @@ nav ul li:nth-child(4) {
   font-family: Arial;
   display: flex;
   font-size: 1.2vw;
-  gap: 10vw;
-  border-top: .5vw solid #ED1F23;
+  gap: 15vw;
+  border-top: .1px solid #ED1F23;
   padding: 1.5vw;
+  letter-spacing: 0.8px;
+}
+
+.copyright h3{
+  font-weight: 200;
+  padding-left: 2vw;
 }
