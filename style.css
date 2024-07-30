@@ -33,7 +33,7 @@ body::-webkit-scrollbar {
 .block {
   animation: appear linear;
   animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  animation-range: entry 0% cover 25%;
 }
   /* Nav Start  */
 nav {
@@ -49,16 +49,22 @@ nav {
   font-size: 1.3vw;
 }
 /* logo start */
-.logo-container {
-  display: flex;
- 
+.logo-container img{
+  /* display: flex; */
+   height: 2vw;
+   width: auto;
 }
-.logo h2 {
+/* .logo h2 {
 	font-size: 3vw;
 	font-weight: 800;
 	font-family: "Asul", sans-serif;
   text-transform: uppercase;
 	color: black;
+}
+
+.logo h2 a {
+  text-decoration: none;
+  color: #000;
 }
 
 .red-o {
@@ -69,10 +75,10 @@ nav {
 	transform: translateX(100em) rotateZ(-90deg);
 	position: relative;
 	opacity: 0.9;
-	mix-blend-mode: exclusion;
+	mix-blend-mode: darken;
 	animation: red-oMove 2s 1 forwards;
-  z-index: -1;
-}
+  z-index: 1;
+} 
 @keyframes red-oMove {
 	0% {
 		transform: translateX(15em) rotateZ(-90deg);
@@ -81,6 +87,7 @@ nav {
 		transform: translateX(-0.7em) rotateZ(-90deg);
 	}
 }
+  */
 /* logo end */
 .nav ul {
   display: flex;
@@ -97,8 +104,13 @@ nav {
   align-items: center;
   justify-content: center;
 }
-.nav ul li a:hover {
-  border: 2px solid #ED1F23;
+
+.nav ul li:not(:nth-child(4)):hover {
+  border: 2px solid #FD0707;
+  border-radius: 5px;
+}
+nav ul li:nth-child(4) {
+  border: 2px solid #FD0707;
   border-radius: 5px;
 }
    /* Nav End  */
@@ -141,10 +153,10 @@ nav {
   padding-left: 10vw;
   overflow: hidden;
 }
-.lady img {
+.flower img {
   position: absolute;
   height: 10vw;
-  margin: -9vw 28vw;
+  margin: -8.5vw 28vw;
 }
 
 /* Water Droping  */
@@ -256,7 +268,7 @@ nav {
 .three {
     display: flex;
     background-color: #ffffff;
-    height:75vw;
+    height: 65vw;
     justify-content: center;
     align-items: center;
     margin-bottom: 10%;
@@ -266,7 +278,7 @@ nav {
   height: 100%;
   width: 50%;
   font-family:var(--moz-font);
-  font-size: 2.5vw;
+  font-size: 1.9vw;
   font-weight: 300;
   text-align: right;
   color: #1F1F1F;
@@ -292,8 +304,8 @@ nav {
 }
     
 .circle-container {
-  width: 15vw;
-  height: 15vw;
+  width: 12vw;
+  height: 12vw;
   border-radius: 50%;
   position: relative;
   overflow: hidden;
@@ -429,7 +441,7 @@ nav {
 }
 .r-t { 
   width: 100%;
-  background-color: #ED1F23;
+  background-color: #FD0707;
   border-left: .5vw solid #000;
   overflow: hidden;
   line-height: 7vw;
@@ -438,9 +450,9 @@ nav {
 }
 .r-t h1 {
   font-size: 15vw;
-  font-weight: 400;
-  transform: scale(.5,1);
-  margin-left: -6.5vw;
+  font-weight: 300;
+  /* transform: scale(.5,1); */
+  margin-left: -6.8vw;
 }
 
 .r-forth .d-t {
@@ -574,7 +586,7 @@ nav {
 .sixth-text {
   width: 30%;
   font-size: 3.5VW;
-  font-family: "Acme", serif;
+  font-family: "Asul", serif;
   text-transform: uppercase;
 }
 
@@ -2285,7 +2297,7 @@ nav {
   color: #fff;
   font-family: Arial;
   display: flex;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   gap: 10vw;
   border-top: .5vw solid #ED1F23;
   padding: 1.5vw;
