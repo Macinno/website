@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Asul:wght@400;700&display=swap');
 
-
+@font-face {
+  font-family: clonoid-bold;
+  src: url(font/Clonoid-W01-Bold.ttf);
+}
 
 * {
   margin: 0;
@@ -186,7 +189,7 @@ nav ul li:nth-child(4) {
 
 .loader {
   position: absolute;
-  margin: -1vw 0vw -15vw 31vw;
+  margin: -3vw 0vw -15vw 31vw;
 }
 
 
@@ -505,7 +508,7 @@ nav ul li:nth-child(4) {
 
 }
 .fifth-h {
-  font-size: 2vw;
+  font-size: 1.9vw;
   font-family:var(--moz-font);
   font-weight: 150;
   line-height: 1.8vw;
@@ -2201,7 +2204,6 @@ nav ul li:nth-child(4) {
   width: 100%;
   background-color: #000;
   display: flex;
-  margin-bottom: -5px;
 }
 .f-img img{
   height: 35vw;
@@ -2213,21 +2215,21 @@ nav ul li:nth-child(4) {
 .f-logo {
   position: absolute;
   color: #fff;
-  margin: 10vw 0 0 17vw;
+  margin: 10vw 0 0 18.9vw;
 }
 
 .f-logo h2 {
-	font-size: 4vw;
-	font-weight: 800;
-	font-family: "Asul", sans-serif;
+	font-size: 2.5vw;
+	font-weight: 700;
+	font-family: clonoid-bold;
   text-transform: uppercase;
 	color: #fff;
 }
 
 .white-o {
   position: absolute;
-  top: 10.2vw;
-  right: 10.3vw;
+  top: 9.3vw;
+  right: 10.1vw;
 	width: 8vw;
 	height: 5vw;
   border-radius: 50%;
@@ -2235,7 +2237,7 @@ nav ul li:nth-child(4) {
 	transform: translateX(100em) rotateZ(-90deg);
 	position: relative;
 	opacity: 0.9;
-	mix-blend-mode: exclusion;
+	mix-blend-mode: lighten;
 	animation: white-oMove 2s  infinite;
 }
 @keyframes white-oMove {
@@ -2265,7 +2267,7 @@ nav ul li:nth-child(4) {
   flex-direction: column;
   gap:2vw;
   margin-top: 2vw;
-  font-size: 16px;
+  font-size: 1.17vw;
 }
 .office-info p {
   font-weight: 100;
@@ -2287,7 +2289,7 @@ nav ul li:nth-child(4) {
   flex-direction: column;
   gap: 2.5vw;
   margin-top: 4vw;
-  font-size: 16px;
+  font-size: 1.17vw;
 }
 
 .copyright {
