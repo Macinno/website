@@ -106,11 +106,11 @@ nav {
 }
 
 .nav ul li:not(:nth-child(4)):hover {
-  border: 2px solid #FD0707;
+  border: 1px solid #FD0707;
   border-radius: 5px;
 }
 nav ul li:nth-child(4) {
-  border: 2px solid #FD0707;
+  border: 1px solid #FD0707;
   border-radius: 5px;
 }
    /* Nav End  */
