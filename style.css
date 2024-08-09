@@ -1,13 +1,21 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Asul:wght@400;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Asul:wght@400;700&family=Bree+Serif&family=Lato:wght@300&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@500;600&family=Raleway:wght@100;400&display=swap');
 
+@font-face {
+  font-family: clonoid-bold;
+  src: url(font/Clonoid-W01-Bold.ttf);
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   height: 100%;
   width: 100%;
@@ -35,31 +43,40 @@ body::-webkit-scrollbar {
   animation-timeline: view();
   animation-range: entry 0% cover 25%;
 }
-  /* Nav Start  */
-nav {
+ /* Nav Start  */
+ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px 7%;
   width: 100%;
-  height: 6vw;
+  height: 5vw;
   color: #000;
   font-family:var(--moz-font);
-  font-weight: 350;
-  font-size: 1.3vw;
+  font-weight: 800;
+  font-size: 1.2vw;
+  letter-spacing: -.8px;
+  position: fixed; 
+  top: 0;          
+  left: 0;         
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.5);
+  
 }
 /* logo start */
-.logo-container img{
-  /* display: flex; */
-   height: 2vw;
-   width: auto;
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
 }
-/* .logo h2 {
-	font-size: 3vw;
+.logo h2 {
+	font-size: 1.5vw;
 	font-weight: 800;
-	font-family: "Asul", sans-serif;
+	font-family: clonoid-bold;
   text-transform: uppercase;
 	color: black;
+  letter-spacing: -1px;
 }
 
 .logo h2 a {
@@ -68,26 +85,25 @@ nav {
 }
 
 .red-o {
-	width: 4vw;
-	height: 4vw;
+	width: 2.8vw;
+	height: 2.8vw;
   border-radius: 50%;
-  border: 1vw solid #FD0707;
+  border: .68vw solid #FD0707;
 	transform: translateX(100em) rotateZ(-90deg);
 	position: relative;
 	opacity: 0.9;
 	mix-blend-mode: darken;
 	animation: red-oMove 2s 1 forwards;
-  z-index: 1;
-} 
+  z-index: -1;
+}
 @keyframes red-oMove {
 	0% {
 		transform: translateX(15em) rotateZ(-90deg);
 	}
 	100% {
-		transform: translateX(-0.7em) rotateZ(-90deg);
+		transform: translateX(-0.4em) rotateZ(-90deg);
 	}
 }
-  */
 /* logo end */
 .nav ul {
   display: flex;
@@ -104,19 +120,22 @@ nav {
   align-items: center;
   justify-content: center;
 }
-
-.nav ul li:not(:nth-child(4)):hover {
-  border: 1px solid #FD0707;
+.nav ul li:nth-child(4) {
+  border: 1px solid #ED1F23;
   border-radius: 5px;
 }
-nav ul li:nth-child(4) {
-  border: 1px solid #FD0707;
+.nav ul li:hover:not(:nth-child(4)) {
+  border: 1px solid #ED1F23;
   border-radius: 5px;
+}
+.nav ul li:hover:not(:nth-child(4)) ~ li:nth-child(4),
+.nav ul li:hover:nth-child(4) {
+  border: none;
 }
    /* Nav End  */
 
- /* First Section Start  */
 
+ /* First Section Start  */
 .one {
   display: flex;
   height: 53vw;
@@ -182,13 +201,13 @@ nav ul li:nth-child(4) {
   
   100% {
     opacity: 1;
-    bottom: -2vw;
+    bottom: -4vw;
   }
 }
 
 .loader {
   position: absolute;
-  margin: -1vw 0vw -15vw 31vw;
+  margin: -3vw 0vw -15vw 31vw;
 }
 
 
@@ -204,8 +223,8 @@ nav ul li:nth-child(4) {
 }
 
 .drop2 {
-  width: .5vw;
-  height: .5vw;
+  width: .7vw;
+  height: .7vw;
   border-radius: 50%;
   position: absolute;
   left: 0;
@@ -238,11 +257,8 @@ nav ul li:nth-child(4) {
   transform: translate(-50%,-50%);
 }
    /* Animation End  */
-
-    /* First Section End  */
-
-    /* Second Section Start */
-
+  /* First Section End  */
+  /* Second Section Start */
 .two {
     height: 60vw;
     display: flex;
@@ -250,8 +266,7 @@ nav ul li:nth-child(4) {
     align-items: center;
     background-color: #f2f2f2;
 }
-    /* Second Animation */
-
+  /* Second Animation */
 .second-ani img {
     align-items: center; 
     height: 40vw;
@@ -260,7 +275,6 @@ nav ul li:nth-child(4) {
 .heading, .description {
     padding: 0 0 0 15vw;
 }
-
     /* Second Section End  */
 
     /* Third section Start */
@@ -268,7 +282,7 @@ nav ul li:nth-child(4) {
 .three {
     display: flex;
     background-color: #ffffff;
-    height: 65vw;
+    height: 62vw;
     justify-content: center;
     align-items: center;
     margin-bottom: 10%;
@@ -277,9 +291,10 @@ nav ul li:nth-child(4) {
 .t-three {
   height: 100%;
   width: 50%;
-  font-family:var(--moz-font);
-  font-size: 1.9vw;
-  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6vw;
+  font-weight: 480;
+  letter-spacing: 1.2px;
   text-align: right;
   color: #1F1F1F;
   margin-top: 40%;
@@ -288,14 +303,14 @@ nav ul li:nth-child(4) {
 .ani-three {
   height: 100%;
   width: 50%;
-  margin-top: 12vw;
+  margin-top: 11vw;
   padding-left: 5vw;
 }
     
 .circle {  
   border-radius: 50%;
   margin-left: 50px;
-  margin: 10% 0%;
+  margin: 7% 0%;
   position: absolute;
   animation-name: wheel;
   animation-duration: 10s;
@@ -304,8 +319,8 @@ nav ul li:nth-child(4) {
 }
     
 .circle-container {
-  width: 12vw;
-  height: 12vw;
+  width: 11.5vw;
+  height: 11.5vw;
   border-radius: 50%;
   position: relative;
   overflow: hidden;
@@ -400,10 +415,7 @@ nav ul li:nth-child(4) {
   left: 59.5vw;
 } */
 
-
 /* Forth Section Start  */
-
-
 .forth {
   color: #fff;
   display: flex;
@@ -451,7 +463,6 @@ nav ul li:nth-child(4) {
 .r-t h1 {
   font-size: 15vw;
   font-weight: 300;
-  /* transform: scale(.5,1); */
   margin-left: -6.8vw;
 }
 
@@ -462,6 +473,7 @@ nav ul li:nth-child(4) {
 .r-t p {
   font-size: 2vw;
 }
+
 /* Forth Section End  */
 
 /* Fifth Section Start  */
@@ -479,7 +491,7 @@ nav ul li:nth-child(4) {
   width: 65vw;
   border-radius: 50%;
   border: 10vw solid #ED1F23;
-  top: 50%;
+  top: 40%;
   left: 40%;
   transform: translate(-35%, -35%);
   z-index: 0;
@@ -507,7 +519,7 @@ nav ul li:nth-child(4) {
 
 }
 .fifth-h {
-  font-size: 2vw;
+  font-size: 1.8vw;
   font-family:var(--moz-font);
   font-weight: 150;
   line-height: 1.8vw;
@@ -520,18 +532,17 @@ nav ul li:nth-child(4) {
 .p-red {
   color: #ED1F23;
   line-height: 2vw;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   font-family:var(--moz-font);
 }
 .p-dtls {
-  font-size: 1.2vw;
+  font-size: 1vw;
   font-family: sans-serif;
   font-weight: 600;
   margin: 3vw 0 3vw 0vw;
   line-height: 2vw;
   text-transform: uppercase;
 }
-
 /* Fifth Section End  */
 
 /* Sixth Section Start  */
@@ -600,8 +611,8 @@ nav ul li:nth-child(4) {
 .cube img{
   width: 100%;
   height: auto;
+  padding-top: 5vw;
 }
-
 /* .container {
   position: relative;
 }
@@ -2214,21 +2225,21 @@ nav ul li:nth-child(4) {
 .f-logo {
   position: absolute;
   color: #fff;
-  margin: 10vw 0 0 17vw;
+  margin: 10vw 0 0 18.9vw;
 }
 
 .f-logo h2 {
-	font-size: 4vw;
-	font-weight: 800;
-	font-family: "Asul", sans-serif;
+	font-size: 2.5vw;
+	font-weight: 700;
+	font-family: clonoid-bold;
   text-transform: uppercase;
 	color: #fff;
 }
 
 .white-o {
   position: absolute;
-  top: 10.2vw;
-  right: 10.3vw;
+  top: 9.3vw;
+  right: 10.1vw;
 	width: 8vw;
 	height: 5vw;
   border-radius: 50%;
@@ -2236,7 +2247,7 @@ nav ul li:nth-child(4) {
 	transform: translateX(100em) rotateZ(-90deg);
 	position: relative;
 	opacity: 0.9;
-	mix-blend-mode: exclusion;
+	mix-blend-mode: lighten;
 	animation: white-oMove 2s  infinite;
 }
 @keyframes white-oMove {
@@ -2253,13 +2264,12 @@ nav ul li:nth-child(4) {
 .f-add {
   height: 70%;
   width: 100%;
-  margin: 10vw 0 0vw 5vw;
+  margin: 10vw 0 0vw 3vw;
   display: flex;
   color: #fff;
   gap: 8vw;
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
-  font-size: 1.5vw;
 }
 
 .info-text {
@@ -2267,13 +2277,17 @@ nav ul li:nth-child(4) {
   flex-direction: column;
   gap:2vw;
   margin-top: 2vw;
+  font-size: 1.17vw;
 }
 .office-info p {
-  font-size: 1.2vw;
   font-weight: 100;
   line-height: 1.5vw;
 }
-
+.office-info h5, .social-add h5 {
+  font-style: bold;
+  letter-spacing: 1px;
+  font-size: 1.17vw;
+}
 
 .f-add a{
   color: #fff;
@@ -2286,19 +2300,27 @@ nav ul li:nth-child(4) {
   flex-direction: column;
   gap: 2.5vw;
   margin-top: 4vw;
-  font-size: 1.5vw;
+  font-size: 1.17vw;
 }
 
 .copyright {
   width: 57%;
   position: absolute;
-  margin-top: 30vw;
-  right:  0vw;
+  margin-top: 30.1vw;
+  right:  -.50vw;
   color: #fff;
   font-family: Arial;
   display: flex;
-  font-size: 1.2vw;
   gap: 10vw;
-  border-top: .5vw solid #ED1F23;
-  padding: 1.5vw;
+  border-top: .1px solid #ED1F23;
+  padding: 1.3vw;
+  align-items: center;
+}
+.copyright h3 {
+  font-size: 1.5vw;
+  margin-left: 6vw;
+  font-weight: 200;
+}
+.copyright p{
+  font-size: 1.1vw;
 }
