@@ -1,0 +1,156 @@
+@media screen and (min-width: 480px){
+    .t-onemedia, .servicemedia{
+      display: none;
+    }
+  }
+
+
+@media screen and (max-width: 480px){
+      /* nav */
+    nav {
+        height: 5vh;
+        width: 100%;
+        font-size: 2.5vw;
+        }
+    .logo h2 {
+        font-size: 2.5vw; /* Increase font size */
+        }
+        
+    .red-o {
+        width: 4.5vw; /* Increase width */
+        height: 4.5vw; /* Increase height */
+        border: 1.1vw solid #FD0707; /* Increase border size */
+        }
+      /* section one */
+       .one{
+        flex-direction: column;
+        height: 58vh;
+        margin-top: -8vw;
+      }
+      .text{
+        width: 100vw;
+        padding-left: 12%;
+      }
+      .text .t-two{
+        font-size: 3vw;
+        margin-top: 1vh;
+      }
+      .text h1{
+    padding-left: 7%;
+  }
+  .first-ani{
+    margin-left: 44.5%;
+    overflow: hidden;
+  }
+  .box-one{
+    width: 40vh;
+    height: 40vh;
+  }
+  .box-two{
+    height: 20vh;
+    width: 20vh;
+  }
+  /* section two */
+   #aboutus {
+    flex-direction: column;
+    height: 50vh;
+   }
+   .second-ani{
+    margin-bottom: 2vh;
+   }
+   .heading{
+     display: none;
+   }
+   .t-onemedia{
+     font-size: 300%;
+     justify-content: left;
+   }
+   .t-two{
+     font-size: 3vw;
+     margin-top: 2vh;
+     padding-left: 3vh;
+   }
+   /* section three */
+   .t-three{
+    font-size: 2.5vw;
+    letter-spacing: 1px;
+   }
+   .ani-three{
+    padding-left: 9vh;
+   }
+   /* Section four */
+   .r-t p{
+    font-size: 2.2vw;
+  }
+  /* section five */
+  .fifth{
+    flex-direction: column;
+    height: 70vh;
+  }
+  .t-five{
+    display: none;
+  }
+  .fifth-text{
+    margin-top: -7vh;
+    padding-left: 12%;
+    width: 100%;
+  }
+  .fifth-text h3 {
+    font-size: 3.5vw;
+    line-height: 4vw;
+  }
+  .s-dot{
+    font-size: 6vw;
+  }
+  .p-red{
+   font-size: 2.5vw;
+   padding-top: 1vh;
+  }
+  .p-dtls {
+    font-size: 2vw;
+    line-height: 3vw;
+    font-weight: 550;
+   }
+    /* section six */
+    .sixth{
+    flex-wrap: wrap;
+    height: 65vh;
+   }
+   .sixth-text, .semi-circle {
+    display: flex;
+    flex: 1;
+    padding-left: 5%;
+    order: 2;
+   }
+   .sixth-text{
+    font-size: 120%;
+   }
+   .cube{
+    flex-direction: column;
+    width: 100%;
+    padding-left: 17%;
+    order: 1;
+    margin-bottom: -100%;
+   }
+   .cube img {
+    height: 30vh;
+    width: 30vh;
+   }
+   /* section seven */
+   .seventh {
+    flex-direction: column;
+    height: 40vh;
+   }
+   .striped-design img {
+    width: 100%;
+   }
+   .seventh-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+   }
+   .s-text, .s-btn{
+    font-size: 130%;
+   }
+}

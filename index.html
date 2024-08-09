@@ -5,30 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Macinno</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
   <script src="https://kit.fontawesome.com/1568cf7c78.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <!-- Nav Start -->
-  <nav>
+   <!-- Nav Start -->
+   <nav>
     <div class="logo-container">
-      <a href="index.html"><img src="image/Maccino-Logo-B.png" alt=""></a>
-      <!-- <div class="logo">
+      <div class="logo">
           <h2><a href="index.html">Macinn</a></h2>
       </div>
-      <div class="red-o"></div> -->
+      <div class="red-o">
+      </div>
     </div>
 
       <div class="nav">
-        <ul>
-          <li class="hideOnMobile"><a href="#home">Home</a></li>
-          <li class="hideOnMobile"><a href="#service">service</a></li>
-          <li class="hideOnMobile"><a href="#aboutus">about us</a></li>
-          <li class="hideOnMobile"><a href="#contact" >contact</a></li>
+        <ul> 
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#service">service</a>
+          </li>
+          <li>
+            <a href="#aboutus">about us</a>
+          </li>
+          <li>
+            <a href="#contact">contact</a>
+          </li>
         </ul>
       </div>
   </nav>
   <!-- Nav End -->
+
 
     <!-- Main start  -->
   <main>
@@ -83,6 +93,7 @@
           <h1 class="t-one heading">
             ABOUT <br>US
           </h1>
+          <h1 class="t-onemedia t-one">ABOUT US</h1>
           <p class="t-two description">
             Macinno is a boutique media agency that blends creativity<br>with data-driven strategies to deliver impactful marketing <br>solutions. Our divisions, including top-tier content <br>production and distribution services, ensure correct<br>results, driving growth and aligning business goals with <br>market needs.</p>
         </div>
@@ -192,8 +203,8 @@
         <section id="service" class="fifth">
           <div class="fifth-circle"></div>
           <div class="service">
-            <h1 class="t-five">SERV <br>ICES
-            </h1>
+            <h1 class="t-five">SERV <br>ICES</h1>
+            <h1 class="servicemedia">SERVICES</h1>
           </div>
           <div class="fifth-text">
             <div class="f-t-one">
@@ -201,7 +212,7 @@
                         DIGITAL ASSEST <br>
                         TRANSFORMATION <span class="s-dot"> .</span>
               </h3>
-              <p class="p-red">
+             <p class="p-red">
                         We Revamp your Product UI
               </p>
               <div class="p-dtls">
@@ -211,7 +222,7 @@
 
                 <div class="f-t-two">
                     <h3 class="fifth-h">
-                        REELS LAB – SHORT <br>
+                        REELS LAB - SHORT <br>
                         FORM HUB<span class="s-dot">  .</span>
                     </h3>
                     <div class="p-red">
@@ -800,5 +811,17 @@
     </div>
   </footer>
 
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+  
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+    </script>
 </body>
 </html>
