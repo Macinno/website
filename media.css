@@ -117,7 +117,7 @@
     /* section six */
     .sixth{
     flex-wrap: wrap;
-    height: 65vh;
+    height: 45vh;
    }
    .sixth-text, .semi-circle {
     display: flex;
@@ -131,13 +131,14 @@
    .cube{
     flex-direction: column;
     width: 100%;
-    padding-left: 17%;
+    padding-left: 8%;
     order: 1;
-    margin-bottom: -100%;
+    margin-bottom: -40%;
+    margin-top: -10%;
    }
    .cube img {
-    height: 30vh;
-    width: 30vh;
+    height: auto;
+    width: 40vh;
    }
    /* section seven */
    .seventh {
