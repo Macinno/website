@@ -125,15 +125,18 @@
    .sixth-text, .semi-circle {
     display: flex;
     flex: 1;
-    padding-left: 5%;
+    padding-top: 15%;
     order: 2;
+   }
+   .semi-circle{
+    padding-left: 7%;
    }
    .sixth-text{
     font-size: 120%;
    }
    .cube-holder{
     width: 100%;
-    padding-left: 40%;
+    padding-left: 35%;
     order: 1;
     margin-bottom: -40%;
     margin-top: -10%;
