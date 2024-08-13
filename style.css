@@ -722,7 +722,7 @@ body::-webkit-scrollbar {
 	width: 8vw;
 	height: 5vw;
   border-radius: 50%;
-  border: 1.2vw solid #Fd0707;
+  border: 1.1vw solid #Fd0707;
 	transform: translateX(100em) rotateZ(-90deg);
 	position: relative;
 	opacity: 0.9;
