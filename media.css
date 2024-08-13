@@ -93,6 +93,9 @@
   .t-five{
     display: none;
   }
+  .servicemedia{
+    display: inline;
+  }
   .fifth-text{
     margin-top: -7vh;
     padding-left: 12%;
@@ -128,18 +131,24 @@
    .sixth-text{
     font-size: 120%;
    }
-   .cube{
-    flex-direction: column;
+   .cube-holder{
     width: 100%;
-    padding-left: 8%;
+    padding-left: 40%;
     order: 1;
     margin-bottom: -40%;
     margin-top: -10%;
    }
-   .cube img {
-    height: auto;
-    width: 40vh;
-   }
+   .cube-wrapper {
+    width: 28vw; 
+    height: 28vw;
+  }
+   .front  { transform: rotateY(  0deg) translateZ(14vw); background-color: red; }
+   .back   { transform: rotateY(180deg) translateZ(14vw); background-color: orangered; }
+   .right  { transform: rotateY( 90deg) translateZ(14vw); background-color: blue; }
+   .left   { transform: rotateY(-90deg) translateZ(14vw); background-color: yellow; }
+   .top    { transform: rotateX( 90deg) translateZ(14vw); background-color: green; }
+   .bottom { transform: rotateX(-90deg) translateZ(14vw); background-color: white; }
+
    /* section seven */
    .seventh {
     flex-direction: column;
@@ -157,4 +166,53 @@
    .s-text, .s-btn{
     font-size: 130%;
    }
+   /* footer start */
+   .footer{
+    flex-direction: column;
+    height: 35vh;
+   }
+   .f-img{
+    height: 16vh;
+    width: auto;
+    margin-bottom: 0;
+    border-bottom: .1px solid red;
+   }
+   .f-logo h2{
+    font-size: 4.5vw;
+    margin-left: 8vw;
+   }
+   .white-o{
+    top: -12vh;
+    right: 1vw;
+    left: 53%;
+	  width: 7.5vw;
+	  height: 10vw;
+    border: 1.7vw solid red;
+   }
+   .f-add{
+    margin: 0;
+    justify-content: space-around;
+   }
+   .office-info h5, .info-text, .social-add h5, .social-text{
+    font-size: 2.5vw;
+   }
+   .info-text .pmedia, .info-text p a{
+    line-height: 1.5vh;
+   }
+   .copyright {
+    width: 100%;
+    margin-top: 72%;
+    right:  0;
+    padding: 1.3vw 0;
+    justify-content: space-around;
+  }
+  .copyright h3 {
+    font-size: 2.5vw;
+    margin-left: 2vw;
+  }
+  .copyright p{
+    font-size: 2.1vw;
+  }
+
 }
+
