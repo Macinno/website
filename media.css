@@ -33,6 +33,7 @@
       .text{
         width: 100vw;
         padding-left: 12%;
+        padding-top: 30%;
       }
       .text .t-two{
         font-size: 3vw;
@@ -44,6 +45,14 @@
   .first-ani{
     margin-left: 44.5%;
     overflow: hidden;
+  }
+  @keyframes rise {
+    from {
+      bottom: 66%; /* Start from the bottom */
+    }
+    to {
+      bottom: 69.5%; /* Move to the top */
+    }
   }
   .box-one{
     width: 40vh;
@@ -66,7 +75,7 @@
    }
    .t-onemedia{
      font-size: 300%;
-     justify-content: left;
+     justify-content: center;
    }
    .t-two{
      font-size: 3vw;
