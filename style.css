@@ -25,24 +25,33 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
-
-/* scroll animation */
-@keyframes appear {
-  from {
-    opacity: 0;
-    clip-path: inset(100% 100% 0 0);
-  }
-  to {
-    opacity: 1;
-    clip-path: inset(0 0 0 0);
-  }
+/* Scroll slide in effect on text */
+/* Common animation class */
+.animate-on-scroll {
+  position: relative; 
+  opacity: 0;
+  transform: translateX(-100%); /* Initial off-screen position */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
-.block {
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 25%;
+/* Active class to trigger animation */
+.animate-on-scroll.active {
+  opacity: 1;
+  transform: translateX(0); /* Move into view */
 }
+.animate-on-scroll-right {
+  position: relative; 
+  opacity: 0;
+  transform: translateX(100%); /* Initial off-screen position to the right */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.animate-on-scroll-right.active {
+  opacity: 1;
+  transform: translateX(0); /* Move into view */
+}
+
+
  /* Nav Start  */
  nav {
   display: flex;
@@ -121,29 +130,27 @@ body::-webkit-scrollbar {
   justify-content: center;
 }
 .nav ul li:nth-child(4) {
-  border: 1px solid #ED1F23;
+  border: 1px solid #FD0707;
   border-radius: 5px;
 }
-.nav ul li:hover:not(:nth-child(4)) {
-  border: 1px solid #ED1F23;
-  border-radius: 5px;
+.nav ul li a:hover {
+  color: #FD0707;
 }
 .nav ul li:hover:not(:nth-child(4)) ~ li:nth-child(4),
 .nav ul li:hover:nth-child(4) {
   border: none;
 }
-   /* Nav End  */
+/* Nav End  */
 
-
- /* First Section Start  */
+/* First Section Start  */
 .one {
   display: flex;
-  height: 53vw;
+  height: 47vw;
 }
 .text {
   width: 45%;
   height: 100%;
-  padding-top: 23.4%;
+  padding-top: 15.4%;
 }
 
 .t-one {
@@ -154,7 +161,7 @@ body::-webkit-scrollbar {
   align-items: center;
   justify-content: flex-start;
   padding-left: 15%;
-  font-size: 10vw;
+  font-size: 9.5vw;
   line-height: 8.5vw;
 }
 
@@ -162,22 +169,38 @@ body::-webkit-scrollbar {
   font-family:var(--moz-font);
   padding-left: 15%;
   color: #313131;
-  font-size: 1.6vw;
+  font-size: 1.4vw;
 }
+
     /* Animation Start  */
 .first-ani {
   width: 55%;
   height: 100%;
-  padding-top: 12vw; 
-  padding-left: 10vw;
+  padding-top: 11.5vw; 
+  padding-left: 11vw;
   overflow: hidden;
 }
-.flower img {
+.flower .grow{
   position: absolute;
-  height: 10vw;
-  margin: -8.5vw 28vw;
+  height: 7vw;
+  margin: -7.5vw 28.5vw;
+  bottom: 0;
+  animation: rise 2.5s ease-in-out forwards;
+  z-index: -1;
 }
-
+@keyframes rise {
+  from {
+    bottom: 80%; /* Start from the bottom */
+  }
+  to {
+    bottom: 90%; /* Move to the top */
+  }
+}
+.flower .pot{
+  position: absolute;
+  height: 8vw;
+  margin: -7.9vw 31vw;
+}
 /* Water Droping  */
 
 @keyframes fade-in {
@@ -241,14 +264,14 @@ body::-webkit-scrollbar {
 /* Water Droping End  */
  
 .box-one{
-  width: 80vw;
-  height: 80vw;
-  border: 12vw solid #ED1F23;
+  width: 70vw;
+  height: 70vw;
+  border: 11vw solid #ED1F23;
   border-radius: 50%;
 }
 .box-two{
-  height: 40vw;
-  width: 40vw;
+  height: 38vw;
+  width: 38vw;
   background-color: #ED1F23;
   border-radius: 50%;
   position: relative;
@@ -361,60 +384,6 @@ body::-webkit-scrollbar {
 }
 }
 
-/* .cir-one {
-  height: 7vw;
-  width: 7vw;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  gap: 5vw; 
-  position: absolute;
-  border-radius: 50%;
-  top: 134vw;
-  left: 59vw;
-
-}
-
-.cir-two {
-  height: 7vw;
-  width: 7vw;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  gap: 5vw; 
-  position: absolute;
-  border-radius: 50%;
-  top: 153vw;
-  left: 59vw;
-}
-
-.cir-three {
-  height: 6vw;
-  width: 6vw;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  gap: 5vw; 
-  position: absolute;
-  border-radius: 50%;
-  top: 172.9vw;
-  left: 59.6vw;
-}
-
-
-.cir-four {
-  height: 6vw;
-  width: 6vw;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  gap: 5vw; 
-  position: absolute;
-  border-radius: 50%;
-  top: 192.5vw;
-  left: 59.5vw;
-} */
-
 /* Forth Section Start  */
 .forth {
   color: #fff;
@@ -446,6 +415,7 @@ body::-webkit-scrollbar {
   font-weight: 800;
   margin-top: 20vw; 
 }
+
 .r-forth {
   width: 100%;
   height: 50vw;

@@ -46,3 +46,51 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('touchmove', onDrag);
     document.addEventListener('touchend', stopDrag);
 });
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+
+  function handleScroll() {
+    const animatedElements = document.querySelectorAll('.animate-on-scroll');
+    const windowHeight = window.innerHeight;
+
+    animatedElements.forEach(element => {
+        const rect = element.getBoundingClientRect();
+
+        // Check if the element is visible in the viewport
+        if (rect.top < windowHeight && rect.bottom > 0) {
+            element.classList.add('active');
+        } else {
+            element.classList.remove('active');
+        }
+    });
+}
+
+window.addEventListener('scroll', handleScroll);
+window.addEventListener('load', handleScroll); // Trigger on page load in case any element is already in view
+
+
+function handleScroll() {
+    const animatedElements = document.querySelectorAll('.animate-on-scroll, .animate-on-scroll-right');
+    const windowHeight = window.innerHeight;
+
+    animatedElements.forEach(element => {
+        const rect = element.getBoundingClientRect();
+
+        // Check if the element is visible in the viewport
+        if (rect.top < windowHeight && rect.bottom > 0) {
+            element.classList.add('active');
+        } else {
+            element.classList.remove('active');
+        }
+    });
+}
+
+window.addEventListener('scroll', handleScroll);
+window.addEventListener('load', handleScroll); // Trigger on page load in case any element is already in view
