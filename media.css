@@ -76,6 +76,8 @@
    .t-onemedia{
      font-size: 300%;
      justify-content: center;
+     display: flex;
+     padding-left: 0%;
    }
    .t-two{
      font-size: 3vw;
