@@ -208,14 +208,24 @@
     flex-direction: column;
     height: 40vh;
    }
-   .striped-design img {
+   .stripe-container {
+    /* height: 150%; */
     width: 100%;
+    padding-top: -50;
+   }
+   .stripe{
+  background-size: 100% 1rem;
+
+   }
+   .stripe-container img{
+    padding-left: 45%;
    }
    .seventh-text{
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100%;
+    margin-bottom: 0;
    }
    .s-text, .s-btn{
     font-size: 130%;
