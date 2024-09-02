@@ -1,5 +1,5 @@
 @media screen and (min-width: 480px){
-    .t-onemedia, .servicemedia{
+    .t-onemedia, .servicemedia, .cube-media{
       display: none;
     }
   }
@@ -131,7 +131,7 @@
     /* section six */
     .sixth{
     flex-wrap: wrap;
-    height: 45vh;
+    height: 95vh;
    }
    .sixth-text, .semi-circle {
     display: flex;
@@ -145,24 +145,64 @@
    .sixth-text{
     font-size: 120%;
    }
-   .cube-holder{
+
+  /* cube start */
+  /* .responsive-container{
+    display: none;
+  }
+  .cube-wrapper {
+    width: 28vw; 
+    height: 28vw;
+    perspective: 1000px;
+    cursor: grab;
+    margin-right: 3vw;
+  }
+  .cube-holder{
     width: 100%;
     padding-left: 35%;
     order: 1;
     margin-bottom: -40%;
     margin-top: -10%;
+    display: flex;
    }
-   .cube-wrapper {
-    width: 28vw; 
-    height: 28vw;
+  .cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotateCube 10s infinite linear;
+  }
+  
+  @keyframes rotateCube {
+    from { transform: rotateX(-30deg) rotateY(-30deg); }
+    to { transform: rotateX(-390deg) rotateY(-390deg); }
+  }
+  
+  .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: transparent;
+  }
+  
+  .square {
+    background-color: inherit;
+    border: 2px solid black;
   }
    .front  { transform: rotateY(  0deg) translateZ(14vw); background-color: red; }
    .back   { transform: rotateY(180deg) translateZ(14vw); background-color: orangered; }
    .right  { transform: rotateY( 90deg) translateZ(14vw); background-color: blue; }
    .left   { transform: rotateY(-90deg) translateZ(14vw); background-color: yellow; }
    .top    { transform: rotateX( 90deg) translateZ(14vw); background-color: green; }
-   .bottom { transform: rotateX(-90deg) translateZ(14vw); background-color: white; }
-
+   .bottom { transform: rotateX(-90deg) translateZ(14vw); background-color: white; } */
+.responsive-container{
+  padding-right: 35vw;
+  margin-top: -50vw;
+  margin-bottom: -50vw;
+}
    /* section seven */
    .seventh {
     flex-direction: column;
