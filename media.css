@@ -11,10 +11,18 @@
   }
       /* nav */
     nav {
-        height: 5vh;
-        width: 100%;
-        font-size: 2.5vw;
-        }
+    height: 7vh;  /* Adjust height for smaller screens */
+    padding: 2vh 5vw;  /* Adjust padding for smaller screens */
+    font-size: 2.5vw;   /* Increase font size for better readability */
+  }
+
+  .nav ul li a {
+    padding: 2vw 2vw; /* Adjust padding inside links for smaller screens */
+  }
+
+  .nav ul li:nth-child(4) {
+    border-width: 0.3vw; /* Slightly thicker border on smaller screens */
+  }
     .logo h2 {
         font-size: 2.5vw; /* Increase font size */
         }
@@ -130,14 +138,15 @@
    }
     /* section six */
     .sixth{
-    flex-wrap: wrap;
-    height: 60vh;
+      display: flex;
+      flex-wrap: wrap;
+      height: 48vh;
    }
    .sixth-text, .semi-circle {
     display: flex;
     flex: 1;
-    /* padding-top: 15%; */
     order: 2;
+    margin-top: -30vw;
    }
    .semi-circle{
     padding-left: 7%;
@@ -147,6 +156,15 @@
    }
    .responsive-container{
     display: none;
+  }
+  .mobile-cube {
+    order: 1; /* Move the .mobile-cube to the top */
+  align-self: center; /* Center the cube horizontally */
+  padding-bottom: 2vh; /* Add spacing below the cube */
+  }
+  .mobile-cube img {
+    height: 70vw;
+    width: 70vw;
   }
   /* cube start */
   /* .responsive-container{
