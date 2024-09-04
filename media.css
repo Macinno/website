@@ -11,7 +11,7 @@
   }
       /* nav */
     nav {
-    height: 7vh;  /* Adjust height for smaller screens */
+    height: 5vh;  /* Adjust height for smaller screens */
     padding: 2vh 5vw;  /* Adjust padding for smaller screens */
     font-size: 2.5vw;   /* Increase font size for better readability */
   }
