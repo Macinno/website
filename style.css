@@ -51,67 +51,6 @@ body::-webkit-scrollbar {
   transform: translateX(0); /* Move into view */
 }
 
-
- /* Nav Start  */
- nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 7%;
-  width: 100%;
-  height: 4vw;
-  color: #000;
-  font-family:var(--moz-font);
-  font-weight: 800;
-  font-size: 1.2vw;
-  letter-spacing: -.8px;
-  position: fixed; 
-  top: 0;          
-  left: 0;         
-  z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.5);
-  
-}
-/* Nav Start  */
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 7%;
-  width: 100%;
-  height: 4vw;
-  color: #000;
-  font-family: var(--moz-font);
-  font-weight: 800;
-  font-size: 1.2vw;
-  letter-spacing: -.8px;
-  position: fixed; 
-  top: 0;          
-  left: 0;         
-  z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-/* Nav Start  */
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 7%;
-  width: 100%;
-  height: 4vw;
-  color: #000;
-  font-family: var(--moz-font);
-  font-weight: 800;
-  font-size: 1.2vw;
-  letter-spacing: -.8px;
-  position: fixed; 
-  top: 0;          
-  left: 0;         
-  z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
  /* Nav Start  */
  nav {
   display: flex;
@@ -202,8 +141,6 @@ nav {
   border: 1px solid transparent;
 }
 /* Nav End  */
-
-
 
 /* First Section Start  */
 .one {
