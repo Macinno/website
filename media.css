@@ -232,7 +232,7 @@
     margin-bottom: 12vw;
    }
    .stripe-container {
-    height: 70%;
+    height: 75%;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -243,7 +243,7 @@
    }
    .stripe-container img{
     padding-left: 25%;
-    height: 50vw;
+    height: 48vw;
    }
    .seventh-text{
     display: flex;
