@@ -316,3 +316,127 @@
    }
 }
 
+/* iphone se  */
+@media screen and (max-width: 375px){
+  .one{
+    height: 64vh;
+  }
+  @keyframes rise {
+    from {
+      bottom: 62.5%; /* Start from the bottom */
+    }
+    to {
+      bottom: 65.5%; /* Move to the top */
+    }
+  }
+  .fifth{
+    height: 85vh;
+  }
+  .sixth{
+    height: 52vh;
+  }
+  .seventh{
+    height: 52vh;
+  }
+  .footer{
+    height: 44vh;
+  }
+  .f-img{
+    height: 20vh;
+  }
+}
+/* iphone xr */
+@media screen and (max-width: 414px){
+  .first-ani{
+    margin-left: 42%;
+    width: 58%;
+  }
+  .seventh{
+    height: 41.5vh;
+  }
+}
+/* iphone 12pro */
+@media screen and (max-width: 390px){
+  .seventh{
+    height: 42vh;
+  }
+}
+
+/* pixel 7, samsung galaxy s20 ultra,samsung galaxy a51/71*/
+@media screen and (max-width: 412px){
+  .fifth{
+    height: 67vh;
+  }
+  .seventh{
+    height: 40vh;
+  }
+  .footer{
+    height: 35vh;
+  }
+}
+/* samsung galaxy s8+ */
+@media screen and (max-width: 360px){
+  @keyframes rise {
+    from {
+      bottom: 64%; /* Start from the bottom */
+    }
+    to {
+      bottom: 66.3%; /* Move to the top */
+    }
+  }
+  .fifth{
+    height: 72vh;
+  }
+  .seventh{
+    height: 47vh;
+  }
+  .footer{
+    height: 38vh;
+  }
+}
+/* galaxy z fold 5 */
+@media screen and (max-width: 344px){
+  .first-ani{
+    margin-left: 39.5%;
+    width: 61%;
+  }
+  .box-one{
+    width: 35vh;
+    height: 35vh;
+  }
+  .box-two{
+    height: 20vh;
+    width: 20vh;
+  }
+  .one{
+    height: 50vh;
+  }
+  @keyframes rise {
+    from {
+      bottom: 71.5%; /* Start from the bottom */
+    }
+    to {
+      bottom: 73.4%; /* Move to the top */
+    }
+  }
+  #aboutus{
+    height: 40vh;
+  }
+  .fifth{
+    height: 57vh;
+  }
+  .sixth{
+    height: 45vh;
+  }
+  .seventh{
+    height: 38vh;
+  }
+  .footer{
+    height: 31vh;
+  
+  }
+  .f-img{
+    height: 15.5vh;
+  }
+}
+/* ..........end........... */
