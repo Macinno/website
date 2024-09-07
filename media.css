@@ -35,7 +35,7 @@
       /* section one */
        .one{
         flex-direction: column;
-        height: 58vh;
+        height: 64vh;
         margin-top: -8vw;
       }
       .text{
@@ -56,10 +56,10 @@
   }
   @keyframes rise {
     from {
-      bottom: 66%; /* Start from the bottom */
+      bottom: 62.8%; /* Start from the bottom */
     }
     to {
-      bottom: 69.5%; /* Move to the top */
+      bottom: 65.3%; /* Move to the top */
     }
   }
   .box-one{
@@ -107,7 +107,7 @@
   /* section five */
   .fifth{
     flex-direction: column;
-    height: 70vh;
+    height: 82vh;
   }
   .t-five{
     display: none;
@@ -227,7 +227,7 @@
    /* section seven */
    .seventh {
     flex-direction: column;
-    height: 40vh;
+    height: 48vh;
     margin: 0;
     margin-bottom: 12vw;
    }
@@ -258,10 +258,10 @@
    /* footer start */
    .footer{
     flex-direction: column;
-    height: 35vh;
+    height: 44vh;
    }
    .f-img{
-    height: 16vh;
+    height: 18vh;
     width: auto;
     margin-bottom: 0;
     border-bottom: .1px solid red;
@@ -271,7 +271,7 @@
     margin-left: 8vw;
    }
    .white-o{
-    top: -12vh;
+    top: -13vh;
     right: 1vw;
     left: 53%;
 	  width: 7.5vw;
