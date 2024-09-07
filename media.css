@@ -439,26 +439,5 @@
     height: 15.5vh;
   }
 }
-/* tab  */
-@media (max-width: 768px){
-  @keyframes rise {
-    from {
-      bottom: 93%; /* Start from the bottom */
-    }
-    to {
-      bottom: 96%; /* Move to the top */
-    }
-  }
-  .responsive-container{
-    display: none;
-  }
-  .mobile-cube{
-    display: flex;
-    height: 55vw;
-    width: 55vw;
-  }
-}
-.seventh{
-  height: 25vw;
-}
+
 /* ..........end........... */
